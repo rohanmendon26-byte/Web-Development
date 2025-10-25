@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        .container{
+            height:488px ;
+            width:466px;
+            border:2px solid black;
+            background-color: azure;
+
+            background-position: left;
+            background-image: url(Screenshot\ 2025-09-16\ 191854.png);
+            background-repeat: no-repeat;
+            /* background-clip: border-box; */
+        }
+
+        img{
+            width: 466px;
+            height: 488px;
+            /* object-fit:cover ; */   /*this will look into the width and height of img and will cover but this will cut some portion */
+
+            /* object-fit:contain ;*/ /* this will set full image but it will provide gap up and down */
+
+            /* object-fit: cover;
+            object-position: left; */  /*right,bottom,left,top-left */
+
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+
+            /* object-fit: contain;
+            object-position: 10px 103px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="Screenshot 2025-09-16 191854.png" alt=""> -->
+
+    </div>
+</body>
+</html>

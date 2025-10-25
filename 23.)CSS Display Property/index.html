@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            display: inline-block;  /* it will convert block element into inline */
+            padding: 33px;/* padding is applied all side but not on top because it is inline so to make it right display inline-block same goes for margin also*/
+            margin: 33px; 
+        }
+
+        .box1{
+            display: none;  /*  with this your content will go and other element will occupy the space */
+            visibility: hidden; /* this will hide the content and other element could not occupy the space of it */
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">                   <!-- both the div will come in seperate line because it is block -->
+        also a nice box
+    </div>
+
+    <span>I am a good boy</span>  <!--  both the Span will come in one line because it is inline -->
+    <span>boy</span>
+</body>
+
+</html>

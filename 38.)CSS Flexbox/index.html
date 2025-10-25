@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /*justify-content: center;*/
+            /* flex-end,flex-start,left,normal,right,space-arround,space-between,space-even */
+            align-items: center;
+            /* align items also have same properties as above */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap;
+            /* when the item gets overflowed inside the container we should be manage it so we use wrap */
+            /* align-content: flex-start; */
+            /* gap: 35px; */
+            /* row-gap: 25px;
+            column-gap:30px ; */
+            gap: 40px 10px;
+            /* row gap,column gap */
+
+
+        }
+
+        .item {
+            /* flex-grow: 1; */
+            height: 62px;
+            width: 62px;
+            border: 2px solid black;
+            /* margin:4px; */
+            background-color: blueviolet;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+        
+        .order-3 {
+            order: 3;
+        }
+        /* if one of the item order is 2 and the other item order is 4 than 2 will come before the 4 */
+
+        .item1{
+            /* flex-grow:2; */
+            /* flex-shrink: 2; */
+            align-self: flex-start;
+        }
+
+        .item2{
+            align-self: flex-end;
+        }
+
+        /* in the item class we have given flex grow 1 it applies to all items and when we create a class item1 for the first element and give flex grow 2 then item1 will take 2 item space at once  */
+      
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item">3</div>
+            <div class="item order-3">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color:rgb(9,106,106);
+            height: 80vh;
+            width:30vw;
+        }
+
+        .box{
+            width:34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation-name: rohanka; */
+            animation-name: rohu;
+            animation-duration: 3s;
+            /* animation-iteration-count:3 ;*/ /* how many times the animation should occur */
+            animation-timing-function:ease-in-out ;
+            animation-delay: 1s; /* it starts after 1s*/
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+            /* animation-play-state: running; */
+            /* animation-fill-mode: forwards; */
+            /* animation-fill-mode: backwards; */
+
+
+            /* animation shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+
+        @keyframes rohanka  {
+            from{
+                background-color: violet;
+            }
+            to{
+                background-color: darkkhaki;
+                transform: translateX(1000px);
+            }
+            
+        }
+
+
+        @keyframes rohu {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10 + 1 */
+        h1.yellow {
+            /* color:yellow !important ; this will print beacuse it is given important   */
+            color: yellow;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* Now the color the h1 text will be purple because it is the latest declarations */
+
+        /* The specificity of this selector is 10  */
+        [data-x=a] {
+            /* it asks whether data-x=a is there in h1 then if it is there then will print */
+            background-color: red;
+        }
+
+         /* The specificity of this selector is 1 + 10 + 10 +10 + 10  */
+        a.harryclass.rohan-class[href]:hover{
+            color:moccasin;
+        }
+
+
+
+        /* every Selector has a score which is used to calculate. more the score that will print 
+        
+        1.)Universal selector = 0
+        2.)Element selectors and pseudo-elements = 1
+        3.)Class selectors attribute selecctors, and pseudo-classes = 10 
+        4.)Id selectors = 100
+        5.)inline styles = 1000
+        then add up the values of all the parts in the selector */
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+
+</body>
+
+</html>

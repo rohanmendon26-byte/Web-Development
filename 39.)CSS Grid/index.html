@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            width:80vw;
+            height: 72vh;
+            border:2px solid rgb(0, 0, 0);
+            display: grid;
+            /* grid-template-columns: 120px 100px;
+            grid-template-rows: 100px 100px 100px; */
+            grid-template-columns: repeat(3,1fr);
+            /* gap:34px; */
+            row-gap: 10px;
+            column-gap: 14px;
+            justify-items: center;
+            align-items:center ;
+        }
+
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width:55px;
+        }
+
+        .item4{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            align-self: flex-start;
+        }
+
+        /* so if you activate the grid and we see there is a number indexing in the grid so based on that number we place the item */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

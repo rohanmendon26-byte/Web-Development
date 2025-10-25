@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin:35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box; /* It means the element's total width and height include content,padding, and border(so size stays fixed). */
+        }
+        .box2{
+            color:red;
+            padding: 10px;
+            margin:25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        /* Margin-Collapse - It means you can see the both div are overlapping and the gap between them is due to margin and now at box 1 margin is 35px and at box 2 margin is 25px and the gap between the div is 35px because  35>25 it is the larger one. */
+
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+
+</html>

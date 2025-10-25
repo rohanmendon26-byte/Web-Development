@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        img{
+            /* float:left; */
+            float:right;
+        }
+
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+            clear:both; /* it applies for both right and left*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="istockphoto-517188688-612x612.jpg" alt="" width="230">
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quisquam sint cum expedita aliquam corporis enim, voluptas repellendus facilis voluptatem nesciunt illum, vero officiis aperiam quas unde in mollitia excepturi! Ipsam provident asperiores impedit!
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore numquam molestiae dolor aut illo nam doloremque reiciendis soluta ab quo saepe ex dignissimos exercitationem iure repellendus sapiente corrupti ipsum quam, dolore tempora nostrum est voluptatem. Cum, nostrum. Nemo fugit corporis deleniti. Voluptas, perferendis! Vero aperiam, numquam voluptas ut molestias repudiandae! Itaque tempora eos quia modi? Ut doloribus voluptatibus quas? Culpa, corporis cum. Consequuntur et veniam magnam aliquid molestiae dicta doloremque sunt. Laudantium, temporibus velit iste libero repudiandae asperiores tempore explicabo ipsa aut delectus ullam itaque nihil veritatis omnis fuga cum. A cupiditate saepe vel eligendi mollitia debitis praesentium eius animi officia dolore, nostrum inventore odio quae, labore deserunt dolores cum similique incidunt maiores. Ab eius sequi esse voluptatem dolores neque nostrum ratione rerum fuga dicta debitis ex ad, cumque vero necessitatibus quisquam ea odio omnis eos veniam blanditiis consectetur culpa! Itaque neque sequi aliquid consequatur, cumque similique amet, nihil saepe iusto ratione, quidem veniam deserunt voluptatem inventore enim vel dignissimos sunt! Sed, totam voluptatibus, voluptas error aliquam sequi atque repudiandae nesciunt doloremque porro quia aspernatur a! Facilis fugit omnis adipisci iusto, reiciendis delectus qui atque dolore nostrum, quas voluptate sed, quia culpa ab corrupti officiis saepe eaque sapiente? Dolor fuga nobis accusamus mollitia quis? Iusto fuga ex nisi ducimus voluptates magnam explicabo, commodi, neque eius doloribus ratione excepturi tempora sed corrupti, cupiditate est a dignissimos illum dolores recusandae voluptatibus. Delectus, quae. Doloremque fuga quas a pariatur laboriosam rem dolor in ipsa, id itaque assumenda optio delectus? Quia dolore quidem iusto beatae vero reiciendis vel non commodi omnis eveniet dolorem perspiciatis quam odio debitis incidunt voluptatum laborum enim, consequatur fuga labore illo corrupti rem exercitationem esse. Optio odit nobis minima adipisci quidem quod ab odio perspiciatis nisi tempora fugiat aspernatur, vero voluptatum voluptates praesentium repellat, reprehenderit cupiditate. Accusantium enim quidem possimus, velit non perspiciatis veritatis sed nulla rem magni voluptatum, voluptate culpa reiciendis ipsam! Quibusdam et exercitationem esse magni quos. Cupiditate, ipsum? Veritatis quis illum ut, laudantium tenetur esse blanditiis quos sapiente vel corrupti tempora quae, doloremque nihil temporibus dolor hic repellat iusto repellendus suscipit inventore quod veniam ipsa fuga. Modi, assumenda doloribus quos iusto hic totam soluta rem alias amet delectus necessitatibus maiores accusamus consequuntur, nostrum quisquam sint beatae voluptate doloremque laudantium enim obcaecati? Iure ab voluptas ipsa quo incidunt! Pariatur qui suscipit quos! Odit?
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+    
+</body>
+</html>

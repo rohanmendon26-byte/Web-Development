@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+
+ul{
+    display:flex;
+    gap: 30px;
+    justify-content: end;
+    /* position: relative;
+    left: -118px; */
+    padding-right: 121px;
+    padding-top: 1px;
+}
+
+.img{
+    position: relative;
+    left: -873px;
+    top:-6px;
+    align-self: center;
+}
+
+.aign{
+    position: relative;
+    left: -900px;
+}
+
+.upper{
+    /* position: relative;
+    top: 14px; */
+    margin-top: 2px;
+}

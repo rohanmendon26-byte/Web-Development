@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-8</title>
+    <style>
+        .container{
+            height:497px;
+            width: 1017px;
+            background-color: blue;
+            position: absolute;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position:absolute;
+            border-radius: 70px;
+            bottom: 0;
+            left:0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: rohan 3s linear infinite, rohanX 1s ease-out infinite alternate ;
+
+
+        }
+
+        @keyframes rohan {
+            from{
+                left:0;
+            }
+            to{
+                left:100%
+            }
+            
+        }
+
+        @keyframes rohanX {
+            from{
+                bottom:0;
+            }
+            to{
+                bottom:100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
