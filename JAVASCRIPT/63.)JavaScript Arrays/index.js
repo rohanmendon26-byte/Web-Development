@@ -24,3 +24,14 @@ console.log(a)
 delete a[5] //This deletes the last item but allocates the memory for that
 console.log(a)
 console.log(a[5]) // shows undefined
+
+let a1=[1,2,3]
+let a2=[4,5,6]
+let a3=[7,8,9]
+
+console.log(a1.concat(a2,a3))
+
+
+let numbers=[1,2,3,4,5]
+numbers.splice(1,3) // splice(index,delete at index)
+console.log(numbers)
