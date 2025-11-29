@@ -21,3 +21,35 @@ cont.lastElementChild.parentElement
 //nextElementSibling-->next sibling
 //firstElementChild-->first element child
 //lastElementChild --> Last Element child
+
+
+document.body.firstElementChild
+// output
+//<div class="container">…</div>
+
+document.body.firstElementChild.childNodes
+//output
+//NodeList(11) [text, div.box, text, div.box, text, div.box, text, div.box, text, div.box, text]
+
+document.body.firstElementChild.children
+//output
+//HTMLCollection(5) [div.box, div.box, div.box, div.box, div.box]
+document.body.firstElementChild.children[0]
+document.body.firstElementChild.children[1]
+document.body.firstElementChild.children[2]
+
+document.body.firstElementChild.children[3].nextElementSibling
+//output
+//<div class=​"box" style=​"color:​ red;​">​Box5​</div>​
+
+document.body.children
+//output
+//HTMLCollection(3) [div.container, table, script]
+
+document.body.children[1].nextElementSibling
+//output
+//<script src="script.js"></script>
+
+
+
+
