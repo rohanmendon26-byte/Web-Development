@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="box" style="display: flex;">Hey I am a box</div>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="Rohan" data-conceptby="Harry">Hey I am a box</div>
     </div>
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML = "I have been inserted <b>by Rohan Mendon</b>";
+        // div.setAttribute("class", "created");
+        // document.querySelector(".container").append(div)
+
+        let cont=document.querySelector(".container");
+        cont.insertAdjacentHTML("afterend","<b>I am under the water.Please help me here too much raining.... gulululul</b>")
+
+        //beforebegin--> Insert HTML immediately before element
+        //afterbegin--> Insert HTML into element at the beginning
+        //beforeend--> Insert HTML into element at the end
+        //afterend--> Insert HTML immediately after element
+    </script>
 </body>
+
 </html>
