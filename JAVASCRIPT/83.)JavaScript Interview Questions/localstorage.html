@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        if(localStorage.getItem("name")){
+            a=localStorage.getItem("name")
+            document.write("Welcome"+a)
+        }
+        else{
+
+            let a=prompt("Enter your name:")
+            localStorage.setItem("name",a);
+            document.write("Welcome"+a)
+        }
+    </script>
+</body>
+
+</html>
+ 
+<!-- in Console below -->
+
+<!-- 
+a={"harry":1,"rohan":69}
+***   {harry: 1, rohan: 69} ***
+
+JSON.stringify(a)
+***  '{"harry":1,"rohan":69}' ***
+
+localStorage.setItem("guys",JSON.stringify(a))
+undefined
+
+localStorage.getItem("guys")
+'{"harry":1,"rohan":69}'
+
+JSON.parse(localStorage.getItem("guys"))
+{harry: 1, rohan: 69} 
+   -->
