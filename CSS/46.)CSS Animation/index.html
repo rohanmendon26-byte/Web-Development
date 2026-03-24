@@ -16,11 +16,11 @@
             height: 45px;
             background-color: aqua;
             /* animation-name: rohanka; */
-            animation-name: rohu;
-            animation-duration: 3s;
+            /* animation-name: rohanka; */
+            /* animation-duration: 3s; */
             /* animation-iteration-count:3 ;*/ /* how many times the animation should occur */
-            animation-timing-function:ease-in-out ;
-            animation-delay: 1s; /* it starts after 1s*/
+            /* animation-timing-function:ease-in-out ; */
+            /*animation-delay: 1s; /* it starts after 1s*/
             /* animation-direction: reverse; */
             /* animation-direction: alternate-reverse; */
             /* animation-play-state: paused; */
@@ -31,6 +31,7 @@
 
             /* animation shorthand */
             /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: nan 3s ease-in-out 1s 3 alternate forwards;
 
         }
 
@@ -43,6 +44,20 @@
                 transform: translateX(1000px);
             }
             
+        }
+
+        @keyframes nan {
+            0%{
+                background-color: blueviolet;
+            }
+            
+            20%{
+                transform: translateY(200px);
+            }
+
+            100%{
+                transform: translateX(200px);
+            }
         }
 
 
