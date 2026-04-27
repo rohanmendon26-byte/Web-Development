@@ -1,0 +1,57 @@
+/* Footer styling */
+footer {
+  background: #1e293b; /* same as navbar */
+  color: #f1f5f9;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Main container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 60px;
+  gap: 30px;
+}
+
+/* Sections */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+/* Links */
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #f1f5f9;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #334155;
+  font-size: 14px;
+}

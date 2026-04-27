@@ -1,0 +1,52 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+nav {
+  background: #1e293b; /* dark blue-gray */
+  padding: 15px 30px;
+}
+
+/* List styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* center items */
+  gap: 40px; /* space between items */
+}
+
+/* List items */
+nav ul li {
+  color: #f1f5f9;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li:hover {
+  color: #38bdf8; /* light blue */
+}
+
+/* Underline animation */
+nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
